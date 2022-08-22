@@ -8,12 +8,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let greenCircle = createCircleView(color: .green, position: CGRect(x: 0, y: 0, width: 250, height: 250))
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        greenCircle.center = view.center
+        view.addSubview(greenCircle)
     }
-
-
 }
 
